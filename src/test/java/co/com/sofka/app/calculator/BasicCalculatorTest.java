@@ -18,6 +18,7 @@ class BasicCalculatorTest {
             "49,  51, 100",
             "1,  100, 101"
     })
+
     public void severalSums(Long first, Long second, Long expectedResult) {
         System.out.println(first + "|" + second + "|" + expectedResult);
         assertEquals(expectedResult, basicCalculator.sum(first, second),

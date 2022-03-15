@@ -25,13 +25,16 @@ public class BasicCalculator {
     public Long divicion(Long number1, Long number2) {
         logger.info("Summing {} + {}", number1, number2);
         if (number2 == 0) {
-            throw new IllegalArgumentException("No se puede vividir entre cero");
+            throw new IllegalArgumentException("No se puede dividir entre cero");
         }
         return number1 / number2;
     }
 
     public Long resto(Long number1, Long number2) {
         logger.info("Summing {} + {}", number1, number2);
+        if (number2 == 0) {
+            throw new IllegalArgumentException("No se puede dividir entre cero");
+        }
         return number1 % number2;
     }
 
